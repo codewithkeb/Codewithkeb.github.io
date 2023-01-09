@@ -1,0 +1,467 @@
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-user-drag: none;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    outline: none;
+    user-select: none;
+    font-family: 'Inconsolata', monospace;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    display: block;
+}
+nav{
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+}
+#menu-bar-button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: grid;
+    height: 2rem;
+    place-items: center;
+    position: relative;
+    width: 3rem;
+}
+#menu-bar-button span{
+    background: #000;
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    width: 2rem;
+    border-radius: 1px 9px;
+}
+#greet-page{
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem 10rem;
+    margin-top: 10rem;
+    align-items: center;
+}
+#greet-item{
+    display: flex;
+    flex-direction: column;
+}
+#hey-there{
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    position: relative;
+}
+#square-01{
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 17px;
+    left: -1.5rem;
+    position: absolute;
+    width: 1.2rem;
+    border-radius: 1px 4px;
+}
+#greet-01{
+    font-size: 60px;
+    font-weight: 700;
+}
+#greet-02{
+    font-size: 30px;
+}
+#greet-03{
+    font-size: 20px;
+    margin-top: 1rem;
+}
+#touch-base{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    position: static;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    white-space: nowrap;
+    width: 150px;
+    border-radius: 1px 9px;
+}
+#touch-base:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+#greet-picture img{
+    width: 300px;
+    border-radius: 1px 9px;
+}
+#portfolio-page{
+    padding: 2rem 10rem;
+}
+.title{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title-span{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 2rem 0;
+    padding-left: 3rem;
+    position: relative;
+}
+#square-02{
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    width: 2rem;
+    border-radius: 1px 7px;
+}
+#portfolio-item{
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: all .5s ease-out;
+}
+.portfolio-item-a{
+    align-items: flex-start;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+.portfolio-item-div{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 1px 9px;
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s ease-out;
+}
+.portfolio-picture{
+    height: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+    width: 100%;
+}
+.portfolio-picture:hover{
+    transform: scale(1.7);
+}
+.portfolio-title{
+    font-size: 20px;
+}
+.portfolio-subheading{
+    padding-top: 10px;
+}
+#reference-page{
+    padding: 2rem 10rem;
+}
+#square-03{
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    width: 2rem;
+    border-radius: 1px 7px;
+}
+#reference-page p{
+    text-indent: 5rem;
+}
+#skills-page{
+    padding: 2rem 10rem;
+}
+#square-04{
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    width: 2rem;
+    border-radius: 1px 7px;
+}
+.technologies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.technologies img{
+    display: grid;
+    margin-bottom: 2rem;
+}
+footer{
+    background-color: #f8f9fc;
+    padding: 2rem 10rem;
+}
+.footer-page-ul{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.footer-page-li{
+    margin-right: 2rem;
+    padding: 8px 0;
+}
+#social-link{
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+#social-link img{
+    padding-left: 3px;
+}
+#trademark {
+    margin-top: 1rem;
+}
+#trademark img{
+    width: 50px;
+    margin-left: -7px;
+}
+#trademark p{
+    font-size: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    nav{
+        padding: 1rem 1rem; 
+        width: 100%;
+    }
+    #greet-page{
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #greet-item{
+        padding-bottom: 10%;
+    }
+    #greet-picture img{
+        width: 200px;
+    }
+    #portfolio-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    #portfolio-item{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .portfolio-title{
+        font-size: 25px;
+    }
+    .portfolio-subheading{
+        font-size: 20px;
+    }
+    #reference-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .title span{
+        font-size: 25px;
+    }
+    #reference-page p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    #skills-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .technologies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    footer{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .footer-page-ul{
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .footer-link-li{
+        padding-right: 3rem;
+    }
+    #trademark p{
+        font-size: 16px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    nav{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    #greet-page{
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #greet-item{
+        padding-bottom: 10%;
+    }
+    #greet-picture img{
+        width: 300px;
+    }
+    #portfolio-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    #portfolio-item{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .portfolio-title{
+        font-size: 25px;
+    }
+    .portfolio-subheading{
+        font-size: 20px;
+    }
+    #reference-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    #reference-page p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    #skills-page{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .technologies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    footer{
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+    .footer-page-ul{
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .footer-link-li{
+        padding-right: 3rem;
+    }
+    #trademark p{
+        font-size: 16px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    nav{
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+    #greet-page{
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #greet-item{
+        padding-bottom: 10%;
+    }
+    #greet-picture img{
+        width: 350px;
+    }
+    #portfolio-page{
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+    #portfolio-item{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .portfolio-title{
+        font-size: 25px;
+    }
+    .portfolio-subheading{
+        font-size: 20px;
+    }
+    #reference-page{
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+    #reference-page p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    #skills-page{
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+    .technologies{
+        justify-content: center;
+    }
+    footer{
+        padding: 2rem 3rem;
+        width: 100%;
+    }
+    .footer-page-ul{
+        font-size: 17px;
+    }
+    #trademark p{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+    #reference-page p{
+        text-align: justify;
+    }
+}
+@media (min-width: 1201px){
+    #reference-page p{
+        text-align: justify;
+    }
+}
