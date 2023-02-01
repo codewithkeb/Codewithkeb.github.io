@@ -33,7 +33,7 @@ nav{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 9;
+    /* z-index: 9; */
 }
 #logo{
     width: 80px;
@@ -267,7 +267,7 @@ footer{
 
 @media (min-width: 320px) and (max-width: 480px){
     nav{
-        padding: 1rem 1rem; 
+        padding: 4px; 
         width: 100%;
     }
     #greet-page{
@@ -335,7 +335,7 @@ footer{
 }
 @media (min-width: 481px) and (max-width: 768px){
     nav{
-        padding: 1rem 1rem;
+        padding: 3px;
         width: 100%;
     }
     #greet-page{
@@ -400,7 +400,7 @@ footer{
 }
 @media (min-width: 769px) and (max-width: 1024px){
     nav{
-        padding: 2rem 3rem;
+        padding: 1rem 2.2rem;
         width: 100%;
     }
     #greet-page{
@@ -456,11 +456,17 @@ footer{
     }
 }
 @media (min-width: 1025px) and (max-width: 1200px){
+    nav{
+        padding: 2rem 9.2rem;
+    }
     #reference-page p{
         text-align: justify;
     }
 }
 @media (min-width: 1201px){
+    nav{
+        padding: 2rem 9.2rem;
+    }
     #reference-page p{
         text-align: justify;
     }
